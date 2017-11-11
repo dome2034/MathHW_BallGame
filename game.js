@@ -26,7 +26,7 @@ function game() {
     }
     this.pickBall = function(){ //pick 10 ball.
         BallPicked = BallBox.slice(9, 19);
-        console.log(BallPicked);
+        //console.log(BallPicked);
     }
     this.isWin = function(){ //check win or not.
         let j = 0;
@@ -54,7 +54,7 @@ function game() {
         let Black = 0;
         let Pass = true;
         let First5 = BallPicked.slice(0, 5);
-        console.log(First5);
+        //console.log(First5);
         for(let i = 0;i<First5.length;i++){
             if(First5[i] == 'b'){ //if this is black, increase black.
                 Black++;
@@ -73,7 +73,7 @@ function game() {
         let White = 0;
         let Pass = false;
         let First5 = BallPicked.slice(0, 5);
-        console.log(First5);
+        //console.log(First5);
         for(let i = 0;i<First5.length;i++){
             if(First5[i] == 'w'){ //if this is white, increase white.
                 White++;

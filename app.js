@@ -7,13 +7,13 @@ for(let i =0;i<8;i++){
 for(let i =0;i<12;i++){
     BallBox.push('b');
 }
-let RoundToPlay = 100000; //all n
+let RoundToPlay = 100000000; //all n
 let NFor2_2 = 0, NFor2_3 = 0;
 let win = 0, win2_2 = 0, win2_3 = 0;
-
+game = new Game();
+game.setBox(BallBox);
 for(let i = 0; i< RoundToPlay;i++){ // loop play game
-    game = new Game();
-    game.setBox(BallBox);
+    
     game.shuffleBall();
     game.pickBall();
     game.getPickedBall();
@@ -33,8 +33,8 @@ for(let i = 0; i< RoundToPlay;i++){ // loop play game
         }
     }
 
-    game = null;
-    delete game;
+   
+    console.log(i);
 }
 
 console.log("------ Result -------");
